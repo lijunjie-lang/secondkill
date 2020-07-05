@@ -55,6 +55,8 @@ public class SkServlet extends HttpServlet {
             System.err.println("userid为："+uid +" 重复秒杀了....");
             resp.getWriter().write("10001");
         }
+
+
         jedis.close();
 
     }
